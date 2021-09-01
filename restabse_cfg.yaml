@@ -1,3 +1,16 @@
 version: 0.1
 min_version: 0.1
 module_name: TestModule
+functions: 
+  user:
+    create:
+      function_name: create_user
+      kwargs: 
+        - kwarg_name1: kwarg
+          kwarg_description1: kwarg чтобы был
+  database: 
+    create: 
+      function_name: create_database
+      kwargs: 
+        - kwarg_name1: kwarg
+          kwarg_description1: kwarg чтобы был
