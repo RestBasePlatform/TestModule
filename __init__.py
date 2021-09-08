@@ -27,3 +27,7 @@ async def read_table_data(db_con_data: DatabaseConnectionData) -> List[DatabaseT
             for table in table_names:
                 res.append(DatabaseTable(table, schema_object, db_object, columns))
     return res
+
+
+async def healt_check(db_con_data: DatabaseConnectionData) -> bool:
+    return True
