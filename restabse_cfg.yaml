@@ -12,3 +12,8 @@ functions:
       function_name: delete_user
       kwargs:
         kwarg_name2: kwarg_description2
+    common:
+    - essence: get_table_data
+      function_name: read_table_data
+      kwargs:
+        kwarg_name2: kwarg_description2
