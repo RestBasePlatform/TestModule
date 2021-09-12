@@ -4,9 +4,12 @@ from restbase_types import DatabaseSchema
 from restbase_types import Database
 from restbase_types import DatabaseConnectionData
 from typing import List
+import socket
+
 
 def create_user():
     pass
+
 
 def delete_user():
     pass
@@ -29,5 +32,10 @@ async def read_table_data(db_con_data: DatabaseConnectionData) -> List[DatabaseT
     return res
 
 
-async def healt_check(db_con_data: DatabaseConnectionData) -> bool:
+async def health_check(db_con_data: DatabaseConnectionData) -> bool:
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((db_con_data.host, db_con_data.port))
+
+    if result != 0:
+        return False
     return True
