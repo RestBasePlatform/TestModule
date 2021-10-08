@@ -17,6 +17,10 @@ functions:
       function_name: read_table_data
       kwargs:
         kwarg_name2: kwarg_description2
+    - essence: healtcheck
+      function_name: healt_check
+      kwargs:
+        kwarg_name2: kwarg_description2
     installation: 
     - essence: create_on_server
       funrcion_name: create_on_server
