@@ -3,7 +3,8 @@ from restbase_types import DatabaseColumn
 from restbase_types import DatabaseSchema
 from restbase_types import Database
 from restbase_types import DatabaseConnectionData
-from typing import List
+from restbase_types.server import ServerConnectionData
+from typing import IO, List
 
 def create_user():
     pass
@@ -31,3 +32,7 @@ async def read_table_data(db_con_data: DatabaseConnectionData) -> List[DatabaseT
 
 async def healt_check(db_con_data: DatabaseConnectionData) -> bool:
     return True
+
+
+async def create_on_server(db_con_data: DatabaseConnectionData, server_con_data: ServerConnectionData) -> bool:
+    pass

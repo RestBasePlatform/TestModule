@@ -17,3 +17,8 @@ functions:
       function_name: read_table_data
       kwargs:
         kwarg_name2: kwarg_description2
+    installation: 
+    - essence: create_on_server
+      funrcion_name: create_on_server
+      kwargs:
+        kwarg_name2: kwarg_description2
